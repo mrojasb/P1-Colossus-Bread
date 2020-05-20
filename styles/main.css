@@ -1,0 +1,165 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* TOP */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9.75px;
+    color: grey; 
+}
+
+
+header img {
+    width: 300px;
+    margin-top: 60px;  
+}
+
+nav {
+    margin-top: 15px;
+    padding: 0;
+}
+    
+nav ul li{
+    display: inline;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+nav:hover {
+    color: rgb(211, 211, 211);
+}
+
+nav li:hover {
+    color: grey;
+}
+
+
+/* MIDDLE */
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+.cont {
+    width: 30%;
+    margin: 5px;
+    background: grey;
+    display: flex;
+}
+
+.cont.text-cont {
+    font-size: 10px;
+    flex-direction: column;
+    background: none;
+}
+
+.ab {
+    width: 100%;
+    /* height: 10px; */
+    background: grey;
+}
+
+.ab:before {
+    content: "";
+    display: block;
+    padding-top: 70%;
+}
+
+.cont.img-cont {
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cont:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* initial ratio of 1:1*/
+  }
+
+.cont-button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+.cont-button:hover {
+    opacity: 0.85;
+}
+
+.cont.text-cont .cont-button {
+    color: white;
+    background: black;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background: grey;
+    margin: 2.5px;
+}
+
+/* BOTTOM */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+h2, p {
+ text-align: center;
+} 
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.user-input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input, .signup-button {
+    font-size: 15px;
+    height: 50px;
+}
+
+input {
+    width: 250px;
+    margin: 5px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.signup-button {
+    border: 3px solid black;
+    width: 110px;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.signup-button:hover {
+    background: black;
+    color: white;
+}
+
+header img, nav ul li, .button, .square {
+    cursor: pointer;
+}
